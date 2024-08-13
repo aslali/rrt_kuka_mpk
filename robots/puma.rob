@@ -1,0 +1,62 @@
+#MPK v1.0 robot
+
+# Issue with self-collision of link 1 with link 2 to be checked
+# self-coll model NOT complete
+
+selfcoll {
+  Link5 Link3
+  Link6 Link3
+  Link4 Link1
+  Link5 Link1
+  Link6 Link1
+}
+
+joint Link1 {
+  model0 "PUMA/puma1.iv"
+}
+
+joint Link2 {
+  parent Link1
+  Rot1 0 1 0 -2.79 2.79 
+  param 0
+  model0 "PUMA/puma2.iv"
+}
+
+
+joint Link3 {
+  parent Link2
+  ConstTransl_Rot1 -0.024 0.078 .136 0 0 1 -2.18 2.18
+  param 1
+  model0 "PUMA/puma3.iv"
+}
+
+joint Link4 {
+  parent Link3
+  ConstTransl_Rot1 0.43 0.03 .11 0 0 1 -2.35 2.35
+  param 2
+  model0 "PUMA/puma4.iv"
+}
+
+joint Link5 {
+  parent Link4
+  ConstTransl_Rot1 0.185 -.307 -.015 0 1 0 -2.61 2.61
+  param 3
+  model0 "PUMA/puma5.iv"
+}
+
+joint Link6 {
+  parent Link5
+  ConstTransl_Rot1 0.038 -.067 .008 0 0 1 -1.74 1.74
+  param 4
+  model0 "PUMA/puma6.iv"
+}
+
+
+
+joint TracePoint {
+  parent Link6
+  ConstTransl 0 0.05 0
+  tracePoint
+  coll FALSE
+}
+

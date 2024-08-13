@@ -1,0 +1,60 @@
+#Inventor V2.1 ascii
+
+#robot model. Note: 
+Separator
+{
+
+        File {name "puma1.iv"}
+	File {name "puma2.iv"}
+	Separator
+	{
+		
+
+		Translation {translation -0.024 0.078 .136} #offset puma_3 w.r.t puma_2
+		File {name "puma3.iv"}
+
+	}
+	Separator
+	{
+		
+
+		Translation {translation -0.024 0.078 .136} #offset puma_3 w.r.t puma_2
+		Translation {translation 0.43 0.03 .11} #offset puma_4 w.r.t puma_3
+		File {name "puma4.iv"}
+
+	}
+
+Separator
+	{
+		
+
+		Translation {translation -0.024 0.078 .136} #offset puma_3 w.r.t puma_2
+		Translation {translation 0.43 0.03 .11} #offset puma_4 w.r.t puma_3
+		Translation {translation 0.185 -.307 -.015} #offset puma_5 w.r.t puma_4
+		File {name "puma5.iv"}
+
+	}
+Separator
+	{
+		
+
+		Translation {translation -0.024 0.078 .136} #offset puma_3 w.r.t puma_2
+		Translation {translation 0.43 0.03 .11} #offset puma_4 w.r.t puma_3
+		Translation {translation 0.185 -.307 -.015} #offset puma_5 w.r.t puma_4
+		Translation {translation 0.038 -.067 .008} #offset puma_6 w.r.t puma_5
+		File {name "puma6.iv"}
+
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+

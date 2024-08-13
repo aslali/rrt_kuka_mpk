@@ -1,0 +1,42 @@
+#Inventor V2.0 ascii
+
+DEF robot mpkRobot {
+	fileName "kuka.rob"
+	translation 0 0 0
+	rotation 1 0 0 -1.57
+
+
+}
+
+DEF box1 mpkObstacle {
+	Separator {
+			Translation {translation 0 0 0}
+			Scale {scaleFactor 500 500 500}
+			DEF __triangulate__ Cube {
+			width 1.5
+			height .5
+			depth 4
+			}
+	}
+}
+
+
+DEF box2 mpkObstacle {
+	Separator {
+			Scale {scaleFactor 500 500 500}
+			Translation {translation 0 -.25 0}
+			DEF __triangulate__ Cube {
+			width 3
+			height .05
+			depth 5
+			}
+	}
+}
+
+DEF car mpkObstacle {
+	Separator {
+		Scale {scaleFactor 500 500 500}
+		Translation {translation 0 0 0}
+		DEF __triangulate__ File {name "vwbeetle_body.iv"}
+	}
+}
